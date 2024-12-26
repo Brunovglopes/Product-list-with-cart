@@ -1,0 +1,345 @@
+lobster-regular {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    font-family: "Lobster";
+}
+
+body {
+    background-image: url(../assets/images/4f7b1ff4-d692-4b32-9c48-3a4a8532fb56.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title {
+    padding-top: 1.5rem;
+    text-align: center;
+    
+}
+
+.fa-glass-cheers {
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+.fas.fa-glass-cheers:hover {
+    cursor: pointer;
+    color: #f1975e;
+    transform: scale(1.5);
+}
+
+.list_culinaria {
+    list-style: none;
+    text-align: center;
+    font-size: x-large;
+    padding: 0;
+}
+
+.list_culinaria li {
+    padding: 3%;
+    display: inline-block;
+}
+main h2{
+    font-size: 25pt;
+    padding-left: 25pt;
+}
+main h2 span{
+    color: #f1975e;
+}
+.container {
+    display: grid;
+    grid-template-columns: 81% auto;
+}
+
+.container_cart {
+    display: block;
+    padding: 15px;
+    width: 80%;
+    height: 250px;
+    background-color: aliceblue;
+    border-radius: 15px;
+    margin-right: 15%;
+    overflow-y: auto;
+    position: static;
+
+}
+
+.text_cart {
+    color: #f1975e;
+    text-align: justify;
+    position: relative;
+}
+.text_cart h2{
+    display: inline;
+    font-size: 14pt;
+}
+
+.myhcartnull {
+    display: flex;
+    height: 60%;
+    max-width: 80%;
+    margin:10%;
+    background-image: url(../assets/images/illustration-empty-cart.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: end;
+}
+ .before{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14pt;
+    color: #d3a181;
+    width: 100%;
+    height: 20px;
+    
+}
+.before::before{
+    content: "Your added items will appear here";
+}
+
+/* caracteristicas do card unico */
+.card_unico {
+
+    margin: 2% 3%;
+    display: inline-block;
+    max-width: 22%;
+    padding: 10px;
+}
+
+img {
+    border-radius: 15px;
+    max-width: 100%;
+}
+
+.Buttoncard {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: -30px;
+}
+
+.Buttoncard button {
+    width: 50%;
+    height: 50px;
+    border-radius: 25px;
+    border-color: azure;
+    border: none;
+    transition: transform 0.5s ease;
+}
+
+.Buttoncard button:hover {
+    transform: scale(1.2);
+    border-style: solid;
+    border-width: 1px;
+    border-color: #f1975e;
+
+}
+
+button p {
+    font-family: 'Times New Roman', Times, serif;
+    display: inline;
+}
+
+.fas.fa-shopping-cart {
+    color: #f1975e;
+}
+
+.text_card {
+    position: relative;
+    top: -35px;
+
+}
+.text_card h2{
+    position: fixed;
+} 
+.card_categoria {
+    color: rgb(95, 91, 91);
+}
+
+.card_nome {
+    font-size: 0.5rem 2rem;
+}
+
+.card_valor {
+    font-size: 16pt;
+    color: #f1975e;
+}
+/* comprinhas */
+.purchases{
+    width: 98%;
+    padding: 10px 0px; 
+    display: flex;
+}
+.purchases img{
+   display: inline;
+    width: 40%;
+
+}
+.mycart button{
+    border: none;
+    background-color: transparent;
+}
+button{
+    cursor: pointer;
+
+}
+.text_purchases .name{
+    font-size: 100%;
+    color:rgb(95, 91, 91)
+}
+.text_purchases .valor{
+    font-size: 100%;
+    color: #d3a181;
+}
+.text_purchases{
+    padding-left: 5%;
+    display: inline;
+}
+.purchases ul{
+    display: inline
+}
+.purchases .fa-times{
+    display: flex;
+    align-items: center;
+    color: #f1975e;
+}
+.selecionada { 
+    border-radius: 25px;
+    border-style: solid;
+    border-color: #f1975e;
+    border-width: 5px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+.selecionada button, .selecionada .fa-shopping-cart{
+    background-color: #f1975e;
+    color: aliceblue;
+}
+.quantidade_comida{
+    display: inline;
+    padding: 4% 7%;
+    border-radius:100%;
+    border-style: double;
+    border-width: 5px;
+    font-size: 8pt;
+    position: relative;
+    right: -60%;
+   top: 15%;
+color: #f1975e;}
+#finalizarcompra {
+ 
+    width: 80%;
+    height: 50px;
+    margin-left:5%;
+    margin-right:5%;
+    
+    background: none;
+    border-radius: 15px;
+}
+#valortotal{
+    text-align: right;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+    width: 80%;
+    padding: 15px;
+}
+.resumo{
+    background-color: black;
+    height: 80vh;
+    width: 60vw;
+    position: absolute;
+    top: 10vh;
+    right: 20vw;
+   border-style: double;
+   border-width: 25px;
+   border-color: #f1975e;
+}
+.filtro_culinaria{
+    font-size: 18pt;
+    border-style: initial;
+    margin: 2%;
+    background-color: transparent;
+}
+#finalizarcompra{
+    display:none ;
+}
+/* .compra{
+    display: flex;
+    position: fixed;
+    background-color: #d3a181;
+    height: 50vh;
+    width: 50vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+} */
+
+
+/* responsivo */
+ @media (max-width: 1003px) {
+    .container {
+        display: grid;
+        grid-template-columns: none;
+       
+    }
+    .shopping_cart{
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
+        max-height: 20vh;
+        flex-direction: column;
+    }
+    .container_cart{
+        width: 100vw;
+        margin: 0 auto;
+      
+    }
+    #valortotal{
+        font-size: 0.9rem;
+        position: inherit;
+        top: 90vh;
+        width: auto;
+        left: 75%;
+    }
+    .myhcartnull{
+        max-width: 20%;
+        margin: 2.2vh 40% ;
+    }
+    .text_purchases {
+        padding: 2% 2% ;
+        display: inline-block;
+        width: 100%;
+    }
+    .text_cart{
+        position: inherit;
+        top: 5;
+    }
+    .card_unico {
+        max-width: 38%;
+        margin: 2% 2%;
+        padding: 8px;
+ }
+    .card_nome {
+    font-size:0.5 rem 2 rem;
+}
+    .mycart button{
+        width: 90%;
+        text-align: right;
+    
+}
+.purchases .fa-times{
+display: inline;
+ text-align: right;
+ padding-right: 10%;
+}
+.purchases img{
+    max-height: 12vh;
+    width: auto;
+    }
+}
